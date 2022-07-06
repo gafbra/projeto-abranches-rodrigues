@@ -50,12 +50,34 @@ nav > a:hover {
     background-color:#D0D6DD ;
 }
 
-main > section > h1 {
+.assessoria {
+    max-width: 1200px; /* para centralizar o site*/
+    margin: 0 auto; /*para centralizar o site*/
+    /*border: 1px solid black;*/
+    border: 1px solid black;
+
+}
+
+main > section > div > h1 {
     color: #4E0B18;
     font-family:'Open Sans', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+}
+
+hr {
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    height: 8px;
+    background-color: #4E0B18;
+    border: #4E0B18;
+}
+
+p {
+    text-align: justify;
+    font-family: ;
 }
 
 
