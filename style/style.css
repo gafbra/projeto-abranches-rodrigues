@@ -28,16 +28,219 @@
 
 body {
     background-color:var(--cor0);
+    font-family: var(--font-texto);
+    padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
 }
+
+h1, h2, h3 {
+    font-family: var(--font-titulo);
+}
+
 header {
+    height: 85px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.150);
+    width: 100%;
+    position: fixed;/*MANTER O HEADER FIXO NO SITE*/
+    top: 0;/*MANTER O HEADER FIXO NO SITE*/
+    background-color: var(--cor0);/*MANTER O HEADER FIXO NO SITE*/
+
+}
+header .cabecalho{
+    max-width: 1100px;
+    min-width: 360px;
+    margin: auto;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 400px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid white; */
+    width: 30%;
+    height: 100%;
+}
+
+
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding: 10px;
+    transition-duration: 0.5s; /*velocidade da transição do efeito*/
+}
+
+nav > a:hover { /*EFEITO DE BOTÃO NO MENU*/
+    background-color:var(--cor1); /*TESTAR COM A COR3*/
+    border-radius: 5px;
+    color: var(--cor0);
 
 }
 
-nav {
-    background-color: var(--cor2);
+main {
+    max-width: 1100px;
+    min-width: 360px;
+    margin: auto;
+    margin-bottom: 30px;  
+}
+
+main .apresentacao{
+    height: 500px;
+}
+
+main .apresentacao h1 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .apresentacao hr {
+    margin: auto;
+    width: 25%;
+    height: 4px;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250) ;
+
+}
+
+main .apresentacao p {
+    padding-top: 50px;
+    text-align: justify;
+    text-indent: 30px; /*coloca o espaço no começo do parágrago*/
+    line-height: 1.5em; /*espaçamento entre linhas*/
+    font-size: 1.4em;
+    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
+    margin: auto;
+}
+
+main .missao {
+    height: 400px;
+}
+main .missao h2 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .missao p {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 1em;
+    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
+    margin: auto;
+}
+
+main .atuacao h2 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .atuacao ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside; /*colaca a bolinha da lista p dentro*/
+    columns: 2;
+    margin: auto;
+    max-width: 800px;
+    font-family: var(--font-texto);
+    font-size: 1.5em;
+    color: black;
+}
+
+main .atuacao li {
+    padding: 10px;
+}
+
+main .advogados {
+    height: 450px;
+}
+main .advogados h2 {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .advogados h3 {
+    padding-top: 3px;
+    margin-bottom: 3px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .advogados .adv{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .advogados .gabriel > img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+main .advogados .pedro > img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+main .contato h2 {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+}
+
+main .contato .icones {
+    width: 20px;
+}
+
+main .contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 footer {
     background-color:var(--cor2);
     color: var(--cor1);
+    text-align: center;
+    padding: 5px;
 }
+    
