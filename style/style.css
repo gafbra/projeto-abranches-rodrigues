@@ -31,6 +31,9 @@ body {
     font-family: var(--font-texto);
     padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
 }
+p {
+    padding: 10px;
+}
 
 h1, h2, h3 {
     font-family: var(--font-titulo);
@@ -63,13 +66,11 @@ header .logo {
 header .menu {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
     /* border: 1px solid white; */
     width: 30%;
     height: 100%;
 }
-
-
 
 nav > a {
     color: var(--cor1);
@@ -88,14 +89,31 @@ nav > a:hover { /*EFEITO DE BOTÃO NO MENU*/
 }
 
 main {
-    max-width: 1100px;
-    min-width: 360px;
-    margin: auto;
     margin-bottom: 30px;  
 }
 
+main .fundo01{ /*IMAGEM DE FUNDO 01*/
+    height: 350px;
+    max-height: 500px;
+    background-image: url('../imagens/belo-horizonte-1705740_1280.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover; /*DEIXA A IMAGEM COBRINDO TODO O ESPAÇO - RESPOSIVO*/
+    background-attachment: fixed; /*FIXA A IMAGEM NA TELA*/
+    
+}
+
+main .transp {
+    background-color:#7d7a7bb4;
+}
+
 main .apresentacao{
-    height: 500px;
+    height: 350px;
+    max-height: 500px;
+    max-width: 1100px;
+    min-width: 360px;
+    margin: auto;
+    
 }
 
 main .apresentacao h1 {
@@ -105,7 +123,7 @@ main .apresentacao h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.200);
 }
 
 main .apresentacao hr {
@@ -119,17 +137,20 @@ main .apresentacao hr {
 }
 
 main .apresentacao p {
-    padding-top: 50px;
+    padding: 20px;
     text-align: justify;
+    font-family: var(--font-texto);
+    color: white;
     text-indent: 30px; /*coloca o espaço no começo do parágrago*/
     line-height: 1.5em; /*espaçamento entre linhas*/
     font-size: 1.4em;
     max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
     margin: auto;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.399)
 }
 
 main .missao {
-    height: 400px;
+    height: 300px;
 }
 main .missao h2 {
     padding-top: 50px;
@@ -143,18 +164,25 @@ main .missao h2 {
 
 main .missao p {
     padding-top: 20px;
+    font-family: var(--font-texto);
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.3em;
     max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
     margin: auto;
 }
 
+main .fundo02 {
+    background-color: var(--cor3);
+}
+
 main .atuacao h2 {
     padding-top: 50px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    max-width: 800px;/*CENTRALIZAÇÃO DO PARÁGRAFO*/
+    margin: auto;
     color:var(--cor1);
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-size: 1.5em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
 }
@@ -164,10 +192,11 @@ main .atuacao ul {
     list-style-position: inside; /*colaca a bolinha da lista p dentro*/
     columns: 2;
     margin: auto;
-    max-width: 800px;
+    max-width: 750px;
     font-family: var(--font-texto);
     font-size: 1.5em;
     color: black;
+    padding-bottom: 50px;
 }
 
 main .atuacao li {
@@ -179,7 +208,7 @@ main .advogados {
 }
 main .advogados h2 {
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     color:var(--cor1);
     text-transform: uppercase;
     text-align: center;
@@ -187,9 +216,16 @@ main .advogados h2 {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
 }
 
+main .advogados hr {
+    margin: auto;
+    width: 15%;
+    height: 4px;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250)
+}
 main .advogados h3 {
-    padding-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 10px;
     color:var(--cor1);
     text-transform: uppercase;
     text-align: center;
@@ -198,8 +234,9 @@ main .advogados h3 {
 }
 
 main .advogados .adv{
+    padding-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 main .advogados .gabriel > img {
@@ -213,29 +250,9 @@ main .advogados .pedro > img {
     display: block;
     margin: auto;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 50%;   
 }
 
-main .contato h2 {
-    padding-top: 50px;
-    margin-bottom: 50px;
-    color:var(--cor1);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
-}
-
-main .contato .icones {
-    width: 20px;
-}
-
-main .contato{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
 
 footer {
     background-color:var(--cor2);
