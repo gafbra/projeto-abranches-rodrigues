@@ -80,7 +80,7 @@ main {
 main .fundo01{ /*IMAGEM DE FUNDO 01*/
     height: 350px;
     max-height: 500px;
-    background-color: #4E0B18;
+    background-color:var(--cor0);
     
 }
 
@@ -105,6 +105,7 @@ main .apresentacao h1 {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.200);
+    color: black;
 }
 
 main .apresentacao hr {
@@ -112,14 +113,14 @@ main .apresentacao hr {
     width: 25%;
     height: 4px;
     background-color:#7D7A7B;
-    border-color: var(--cor1);
+    border-color: #7D7A7B;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250) ;
 
 }
 
 main .apresentacao p {
     padding: 20px;
-    text-align: justify;
+    text-align: center;
     font-family: var(--font-texto);
     color:var(--cor4);
     text-indent: 30px; /*coloca o espaço no começo do parágrago*/
@@ -127,7 +128,7 @@ main .apresentacao p {
     font-size: 1.4em;
     max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
     margin: auto;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.399)
+    color: black;
 }
 
 
