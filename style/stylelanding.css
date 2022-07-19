@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'OpenSans-Regular';
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:'SourceSerifPro-Regula';
+    src: url(../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
+}
+/*VARIÁVEIS - PALETA DE CORES E FONTES*/
+:root {
+    --cor0: #fbfbfb;
+    --cor1: #4E0B18;
+    --cor2: #7D7A7B;
+    --cor3: #C9C5C6;
+    --cor4: #FCF7F9;
+
+    --font-titulo:'OpenSans-Regular';
+    --font-texto:'SourceSerifPro-Regula';
+}
+
+* { /*RESET DE PÁGINA*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:var(--cor0);
+    font-family: var(--font-texto);
+    padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
+}
+p {
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-titulo);
+}
+
+header {
+    height: 85px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.150);
+    width: 100%;
+    position: fixed;/*MANTER O HEADER FIXO NO SITE*/
+    top: 0;/*MANTER O HEADER FIXO NO SITE*/
+    background-color: var(--cor0);/*MANTER O HEADER FIXO NO SITE*/
+
+}
+header .cabecalho{
+    max-width: 1100px;
+    min-width: 360px;
+    margin: auto;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 400px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    /* border: 1px solid white; */
+    width: 30%;
+    height: 100%;
+}
+
+
+main {
+    margin-bottom: 30px;  
+}
+
+main .fundo01{ /*IMAGEM DE FUNDO 01*/
+    height: 350px;
+    max-height: 500px;
+    background-color: #4E0B18;
+    
+}
+
+/*main .transp {
+    background-color:#7d7a7bb4;
+}*/
+
+main .apresentacao{
+    height: 350px;
+    max-height: 500px;
+    max-width: 1100px;
+    min-width: 360px;
+    margin: auto;
+    
+}
+
+main .apresentacao h1 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    color:var(--cor4);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.200);
+}
+
+main .apresentacao hr {
+    margin: auto;
+    width: 25%;
+    height: 4px;
+    background-color:#7D7A7B;
+    border-color: var(--cor1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250) ;
+
+}
+
+main .apresentacao p {
+    padding: 20px;
+    text-align: justify;
+    font-family: var(--font-texto);
+    color:var(--cor4);
+    text-indent: 30px; /*coloca o espaço no começo do parágrago*/
+    line-height: 1.5em; /*espaçamento entre linhas*/
+    font-size: 1.4em;
+    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
+    margin: auto;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.399)
+}
+
+
+footer {
+    background-color:var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    padding: 5px;
+}
+    
