@@ -1,24 +1,20 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family:'OpenSans-Regular';
-    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-family:'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
-@font-face {
-    font-family:'SourceSerifPro-Regula';
-    src: url(../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
-}
+
 /*VARIÁVEIS - PALETA DE CORES E FONTES*/
 :root {
     --cor0: #fbfbfb;
-    --cor1: #4E0B18;
-    --cor2: #7D7A7B;
+    --cor1: #4F0B18;
+    --cor2: #7E8287;
     --cor3: #C9C5C6;
     --cor4: #FCF7F9;
 
-    --font-titulo:'OpenSans-Regular';
-    --font-texto:'SourceSerifPro-Regula';
+    
 }
 
 * { /*RESET DE PÁGINA*/
@@ -28,7 +24,7 @@
 
 body {
     background-color:var(--cor0);
-    font-family: var(--font-texto);
+    font-family:'Roboto-Regular';
     padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
 }
 p {
@@ -36,12 +32,12 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: var(--font-titulo);
+    font-family:'Roboto-Regular';
 }
 
 header {
     height: 85px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.150);
+    box-shadow: 0px 2px 2px #B98389;
     width: 100%;
     position: fixed;/*MANTER O HEADER FIXO NO SITE*/
     top: 0;/*MANTER O HEADER FIXO NO SITE*/
@@ -65,10 +61,10 @@ header .logo {
 
 header .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items:center;
     /* border: 1px solid white; */
-    width: 30%;
+    width: 45%;
     height: 100%;
 }
 
@@ -76,7 +72,7 @@ nav > a {
     color: var(--cor1);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 10px;
     transition-duration: 0.5s; /*velocidade da transição do efeito*/
 }
@@ -92,87 +88,18 @@ main {
     margin-bottom: 30px;  
 }
 
-main .fundo01{ /*IMAGEM DE FUNDO 01*/
-    height: 350px;
-    max-height: 500px;
+main .banner{ /*IMAGEM DE FUNDO*/
+    height:100vh;
+    /*max-height: 500px;*/
     background-image: url('../imagens/belo-horizonte-1705740_1280.jpg');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover; /*DEIXA A IMAGEM COBRINDO TODO O ESPAÇO - RESPOSIVO*/
-    background-attachment: fixed; /*FIXA A IMAGEM NA TELA*/
-    
-}
-
-main .transp {
-    background-color:#7d7a7bb4;
-}
-
-main .apresentacao{
-    height: 350px;
-    max-height: 500px;
-    max-width: 1100px;
-    min-width: 360px;
-    margin: auto;
-    
-}
-
-main .apresentacao h1 {
-    padding-top: 50px;
-    margin-bottom: 15px;
-    color:var(--cor4);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.200);
-}
-
-main .apresentacao hr {
-    margin: auto;
-    width: 25%;
-    height: 4px;
-    background-color: var(--cor1);
-    border-color: var(--cor1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250) ;
-
-}
-
-main .apresentacao p {
-    padding: 20px;
-    text-align: justify;
-    font-family: var(--font-texto);
-    color:var(--cor4);
-    text-indent: 30px; /*coloca o espaço no começo do parágrago*/
-    line-height: 1.5em; /*espaçamento entre linhas*/
-    font-size: 1.4em;
-    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
-    margin: auto;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.399)
-}
-
-main .missao {
-    height: 300px;
-}
-main .missao h2 {
-    padding-top: 50px;
-    margin-bottom: 15px;
-    color:var(--cor1);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
-}
-
-main .missao p {
-    padding-top: 20px;
-    font-family: var(--font-texto);
-    text-align: justify;
-    font-size: 1.3em;
-    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
-    margin: auto;
+    background-attachment: fixed; /*FIXA A IMAGEM NA TELA*/  
 }
 
 main .fundo02 {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
 }
 
 main .atuacao h2 {
@@ -184,7 +111,7 @@ main .atuacao h2 {
     text-transform: uppercase;
     text-align: left;
     font-size: 1.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+    
 }
 
 main .atuacao ul {
@@ -193,7 +120,7 @@ main .atuacao ul {
     columns: 2;
     margin: auto;
     max-width: 750px;
-    font-family: var(--font-texto);
+    font-family: 'Roboto-Regular';
     font-size: 1.5em;
     color: black;
     padding-bottom: 50px;
@@ -213,7 +140,7 @@ main .advogados h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+    
 }
 
 main .advogados hr {
@@ -222,7 +149,7 @@ main .advogados hr {
     height: 4px;
     background-color: var(--cor1);
     border-color: var(--cor1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250)
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.250)
 }
 main .advogados h3 {
     margin-top: 10px;
@@ -230,7 +157,7 @@ main .advogados h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.250);
+   
 }
 
 main .advogados .adv{

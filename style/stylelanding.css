@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color:var(--cor0);
+    background-color:var(--cor2);
     font-family: var(--font-texto);
     padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
 }
@@ -45,7 +45,7 @@ header {
     width: 100%;
     position: fixed;/*MANTER O HEADER FIXO NO SITE*/
     top: 0;/*MANTER O HEADER FIXO NO SITE*/
-    background-color: var(--cor0);/*MANTER O HEADER FIXO NO SITE*/
+    background-color: var(--cor2);/*MANTER O HEADER FIXO NO SITE*/
 
 }
 header .cabecalho{
