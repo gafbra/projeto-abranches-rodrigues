@@ -100,18 +100,28 @@ main .banner{ /*IMAGEM DE FUNDO*/
 
 main .fundo02 {
     background-color: var(--cor2);
+    height: 400px;
 }
 
 main .atuacao h2 {
-    padding-top: 50px;
-    padding-bottom: 10px;
-    max-width: 800px;/*CENTRALIZAÇÃO DO PARÁGRAFO*/
+    padding-top: 80px;
+    padding-bottom: 5px;
+    max-width: 1100px;/*CENTRALIZAÇÃO DO PARÁGRAFO*/
     margin: auto;
     color:var(--cor1);
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     font-size: 1.5em;
-    
+}
+
+main .atuacao hr {
+    margin: auto;
+    width: 15%;
+    margin-bottom: 50px;
+    height: 4px;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.250)
 }
 
 main .atuacao ul {
@@ -156,7 +166,7 @@ main .advogados h3 {
     color:var(--cor1);
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
    
 }
 
@@ -171,19 +181,61 @@ main .advogados .gabriel > img {
     margin: auto;
     width: 150px;
     border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    margin-bottom: 20px;
+    
 }
 
 main .advogados .pedro > img {
     display: block;
     margin: auto;
     width: 150px;
-    border-radius: 50%;   
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    margin-bottom: 20px;
 }
 
+main .contato {
+    height: 300px;
+    width: 1100px;
+    margin: auto;
+    
+}
 
+main .contato h2 {
+    padding-top: 50px;
+    margin-bottom: 5px;
+    color:var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Roboto-Regular';
+}
+
+main .contato hr {
+    margin: auto;
+    width: 15%;
+    height: 4px;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.250);
+    margin-bottom: 30px;
+}
+
+main  .contato p {
+    font-family:'Roboto-Regular';
+    font-size: 1.3rem;
+    padding: 0px;
+}
+
+main .fundo03 {
+        background-color: var(--cor2);
+        height: 250px;
+
+}
 footer {
-    background-color:var(--cor2);
-    color: var(--cor1);
+    background-color:black;
+    color: white;
     text-align: center;
     padding: 5px;
 }
