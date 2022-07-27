@@ -1,14 +1,10 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family:'OpenSans-Regular';
-    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-family:'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
-@font-face {
-    font-family:'SourceSerifPro-Regula';
-    src: url(../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
-}
 /*VARIÁVEIS - PALETA DE CORES E FONTES*/
 :root {
     --cor0: #fbfbfb;
@@ -16,9 +12,6 @@
     --cor2: #7D7A7B;
     --cor3: #C9C5C6;
     --cor4: #FCF7F9;
-
-    --font-titulo:'OpenSans-Regular';
-    --font-texto:'SourceSerifPro-Regula';
 }
 
 * { /*RESET DE PÁGINA*/
@@ -27,111 +20,106 @@
 }
 
 body {
-    background-color:var(--cor2);
-    font-family: var(--font-texto);
-    padding-top: 85px /*MANTER O HEADER FIXO NO SITE*/
+    background-color:var(--cor0);
+    font-family:'Roboto-Regular';
 }
-p {
-    padding: 10px;
-}
+
 
 header {
-    height: 85px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.150);
-    width: 100%;
-    position: fixed;/*MANTER O HEADER FIXO NO SITE*/
-    top: 0;/*MANTER O HEADER FIXO NO SITE*/
-    background-color: var(--cor2);/*MANTER O HEADER FIXO NO SITE*/
-
-}
-header .cabecalho{
-    max-width: 1100px;
-    min-width: 360px;
+    height: 100px;
+    max-width: 1200px;
     margin: auto;
-    margin-top: 20px ;
-    margin-bottom: 20px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 header .logo {
     width: 400px;
 }
 
-header .menu {
+header .btn-contato{
+    background-color: var(--cor1);
+    color:var(--cor0);
+    padding: 10px 40px;
+    border: 1px solid var(--cor1);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
+    font-family: 'Roboto-Regular';
+    font-size: 1em;
+    text-transform: uppercase;    
+}
+
+header .btn-contato:hover { /*EFEITO DE BOTÃO NO MENU*/
+    background-color:var(--cor2); /*TESTAR COM A COR3*/
+    border: 1px solid var(--cor2);
+    color: var(--cor0);
+}
+
+main .fundo1 {
+    background-image: url(../imagens/fundo1.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    /* border: 1px solid white; */
-    width: 30%;
-    height: 100%;
+    align-items: left;
 }
 
-
-main {
-    margin-bottom: 30px;  
-}
-
-main .fundo01{ /*IMAGEM DE FUNDO 01*/
-    height: 350px;
-    max-height: 500px;
-    background-color:var(--cor0);
-    
-}
-
-/*main .transp {
-    background-color:#7d7a7bb4;
-}*/
-
-main .apresentacao{
-    height: 350px;
-    max-height: 500px;
-    max-width: 1100px;
-    min-width: 360px;
+main .container {
+    max-width: 1200px;
     margin: auto;
-    
 }
 
-main .apresentacao h1 {
-    padding-top: 50px;
-    margin-bottom: 15px;
-    color:var(--cor4);
+main .main1{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+main .main1 h1 {
+    font-size: 3.3em;
+    color: white;
+    margin-bottom: 70px;
+    text-shadow: 5px 3px 8px black;
+}
+
+main .main1 p {
+    font-size: 1.5em;
+    color: white;
+    text-align: justify;
+    padding-bottom: 60px;
+}
+
+.btn-main {
+    background-color: var(--cor1);
+    color:var(--cor0);
+    margin: auto;
+    padding: 20px 30px;
+    border: 1px solid var(--cor1);
+    border-radius: 40px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
+    font-family: 'Roboto-Regular';
+    font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.200);
-    color: black;
 }
 
-main .apresentacao hr {
-    margin: auto;
-    width: 25%;
-    height: 4px;
-    background-color:#7D7A7B;
-    border-color: #7D7A7B;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.250) ;
-
+.btn-main:hover { /*EFEITO DE BOTÃO NO MENU*/
+    background-color:var(--cor2); /*TESTAR COM A COR3*/
+    border: 1px solid var(--cor2);
+    color: var(--cor0);
 }
 
-main .apresentacao p {
-    padding: 20px;
-    text-align: center;
-    font-family: var(--font-texto);
-    color:var(--cor4);
-    text-indent: 30px; /*coloca o espaço no começo do parágrago*/
-    line-height: 1.5em; /*espaçamento entre linhas*/
-    font-size: 1.4em;
-    max-width: 800px; /*CENTRALIZAÇÃO DO PARÁGRAFO*/
-    margin: auto;
-    color: black;
+main .fundo2 {
+    background-image:linear-gradient(to right, #7D7A7B, #fbfbfb);
+}
+
+main .main2 {
+    display: flex;
+    justify-content: center;
 }
 
 
-footer {
-    background-color:var(--cor2);
-    color: var(--cor1);
-    text-align: center;
-    padding: 5px;
-}
-    
